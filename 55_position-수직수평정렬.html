@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position을 이용한 수직, 수평 정렬</title>
+    <style>
+        .con{
+            width: 400px;height: 250px;
+            background-color: royalblue;
+            position: relative;
+        }
+        .item{
+            width: 100px;height: 100px;
+            background-color: coral;
+            position: absolute;
+        }
+        /* 수직정렬 */
+        .item1{
+            top: 0;bottom: 0;
+            margin: auto;
+        }
+        /* 수평정렬 */
+        .item2{
+            right: 0;left: 0;
+            margin: auto;
+        }
+        /* 수직+수평 (정가운데) 정렬 */
+        .item3{
+            left: 0;right: 0;
+            top: 0;bottom: 0;
+            margin: auto;
+        }
+        /* 글자를 수평으로 가운데 정렬 */
+        .container4{margin-bottom: 20px;}
+        .container4 h6{
+            position: absolute;
+            left: 0;right: 0;
+            margin: auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .container5 h6{
+            position: absolute;
+            top: 0;bottom: 0;
+            margin: auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>수직정렬</h2>
+    <div class="container1 con">
+        <div class="item1 item"></div>
+    </div>
+    <h2>수평정렬</h2>
+    <div class="container2 con">
+        <div class="item2 item"></div>
+    </div>
+    <h2>수직+수평(정가운데) 정렬</h2>
+    <div class="container3 con">
+        <div class="item3 item"></div>
+    </div>
+    <hr>
+    <div class="container4 con">
+        <h6>글자를 수평으로 가운데 정렬</h6>
+    </div>
+    <div class="container5 con">
+        <h6>글자를 수직으로 가운데 정렬</h6>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-color</title>
+    <style>
+        div{width: 300px;margin: 20px;padding: 10px;
+        text-align: center;border-style: solid;}
+        #box1{border-color: red;}
+        #box2{border-color: red #63f542;}
+        #box3{border-color: red rgba(21, 168, 194, 0.5) hsl(297, 71%, 59%) ;}
+        #box4{border-color: red rgba(21, 168, 194, 0.5) hsl(297, 71%, 59%) blue;}
+        #box5{border-color: red rgba(21, 168, 194, 0.5) hsl(297, 71%, 59%) transparent;}
+    </style>
+</head>
+<body>
+    <h2>border-color사용법</h2>
+    <div id="box1">색상</div>
+    <div id="box2">위아래 | 왼쪽오른쪽</div>
+    <div id="box3">위 | 왼오른쪽 | 아래</div>
+    <div id="box4">위 | 오른쪽 | 아래 | 왼쪽</div>
+    <div id="box5">위 | 오른쪽 | 아래 | 투명</div>
+</body>
+</html>

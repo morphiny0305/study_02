@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-transform</title>
+    <style>
+        p{
+            border: 1px solid red;
+            width: 300px;
+            padding: 10px;
+        }
+        p:first-of-type{text-transform: none;}
+        p:nth-of-type(2){text-transform: capitalize;}
+        p:nth-of-type(3){text-transform: uppercase;}
+        p:nth-of-type(4){text-transform: lowercase;}
+    </style>
+</head>
+<body>
+    <h1>영문자의 대소문자 변경할 때 사옹 : text-transform</h1>
+    <p>have a nice day~~!</p>
+    <p>have a nice day~~!</p>
+    <p>have a nice day~~!</p>
+    <p>HAVE A NICE DAY~~!</p>
+</body>
+</html>

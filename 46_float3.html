@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float3</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        nav{margin: 100px;}
+        ul li{
+            list-style: none;
+            float: left;
+        }
+        /* 짝수 even*/
+        ul li:nth-child(even) a{
+            background-color: palegoldenrod;
+        }
+        /* 홀수 odd*/
+        ul li:nth-child(odd) a{
+            background-color: darkred;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            height: 50px;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+        }
+        ul li a:hover{text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Customer</a></li>
+            <li><a href="#">Cummunity</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

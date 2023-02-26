@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-quiz</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background-color: #333;}
+        section{
+            width: 1000px;height: 700px;
+            margin: auto;
+            background-image: url(./images/postion_Quiz_bg.jpg);
+            position: relative; /*위치 기준*/
+        }
+        .img1{
+            position: absolute;
+            left: 0; right: 0;
+            margin: auto;
+        }
+        .img2{
+            position: absolute;
+            right: 10px;bottom: 75px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="./images/clock.png" alt="시계" class="img1">
+        <img src="./images/flowerpot.png" alt="화분" class="img2">
+    </section>
+</body>
+</html>

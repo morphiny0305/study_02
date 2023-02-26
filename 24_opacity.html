@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity</title>
+    <style>
+        div{background-color: #000;color: red;}
+        #box1{opacity: 0.1;}
+        #box2{opacity: 0.3;}
+        #box3{opacity: 0.5;}
+        #box4{opacity: 0.9;}
+
+        .imghover{cursor: pointer;transition: opacity 0.3s}
+        .imghover:hover{opacity: 50%;}
+        
+        a{transition: all 0.3s;}
+        a:hover{opacity: 0.3;}
+    </style>
+</head>
+<body>
+    <div id="box1">태그의 투명도 조절을 0.0부터 1.0사이의 숫자를 입력하여 사용</div>
+    <div id="box2">태그의 투명도 조절을 0.0부터 1.0사이의 숫자를 입력하여 사용</div>
+    <div id="box3">태그의 투명도 조절을 0.0부터 1.0사이의 숫자를 입력하여 사용</div>
+    <div id="box4">태그의 투명도 조절을 0.0부터 1.0사이의 숫자를 입력하여 사용</div>
+    <hr>
+    <h3>Quiz.이미지에 호버하면 투명도를 50%정도 투명하게 만드시오.(마우스 포인터를 손가락 모양으로 만드시오.)</h3>
+    <img src="./images/bg1.jpg" alt="이미지" class="imghover">
+    <a href="#"><img src="./images/clock.png" alt="img"></a>
+</body>
+</html>

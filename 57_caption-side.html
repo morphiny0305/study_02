@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caption-side</title>
+    <style>
+        table{width: 300px;height: 300px;border: 1px solid crimson;}
+        table.table1 caption{caption-side: top;text-align: right;margin-bottom: 20px;}
+        table.table2 caption{caption-side: bottom;margin-top: 20px;}
+        td{border: 1px solid crimson;}
+    </style>
+</head>
+<body>
+    <h3>caption-side: top(기본값)</h3>
+    <table class="table1">
+        <caption>제목이 들어가는 곳</caption>
+        <tr>
+            <td>1-1</td>
+            <td>1-2</td>
+            <td>1-3</td>
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+            <td>2-3</td>
+        </tr>
+        <tr>
+            <td>3-1</td>
+            <td>3-2</td>
+            <td>3-3</td>
+        </tr>
+    </table>
+    <h3>caption-side: bottom</h3>
+    <table class="table2">
+        <caption>제목이 들어가는 곳</caption>
+        <tr>
+            <td>1-1</td>
+            <td>1-2</td>
+            <td>1-3</td>
+        </tr>
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+            <td>2-3</td>
+        </tr>
+        <tr>
+            <td>3-1</td>
+            <td>3-2</td>
+            <td>3-3</td>
+        </tr>
+    </table>
+</body>
+</html>

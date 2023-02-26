@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin과 padding</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        section{width: 1800px;height: 500px; background-color: #c8ff00;}
+        .box1{
+            width: 700px;height: 300px;
+            padding: 20px 30px;
+            border: 1px solid red;
+            float: left;
+            margin-right: 133px;
+        }
+        .box2{
+            width: 500px;height: 300px;
+            padding: 50px 20px 10px;
+            border: 4px solid black;
+            margin: 5px 10px 3px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">
+            1800 - 1524 => 276/2 = 138
+            div 가로 길이는 ? 700+30+30+1+1=762 <br>
+            세로 길이는? 300+20+20+1+1=342
+        </div>
+        <div class="box1">
+            div 가로 길이는 ? 700+30+30+1+1=762<br>
+            세로 길이는? 300+20+20+1+1=342
+        </div>
+    </section>
+        <div class="box2">
+            총 가로 길이<br>
+            박스 크기만 일 때: 500+20+20+4+4=548px<br>
+            박스+마진 포함된 크기 일 때: 500+20+20+4+4+10+10=568px
+            <hr>
+            총 세로 길이<br>
+            박스 크기만 일 때: 300+50+10+4+4=368px<br>
+            박스+마진 포함된 크기 일 때:300+50+10+4+4+5+3=376px
+        </div>
+</body>
+</html>

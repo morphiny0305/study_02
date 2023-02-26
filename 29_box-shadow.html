@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        div{
+            width: 250px;height: 100px;
+            border: 2px solid black;
+            margin: 50px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold; 
+            font-size: 20px;
+            text-shadow: 5px 5px 2px black;
+            box-shadow: 5px 5px 30px #888;
+        }
+        p{
+            width: 250px; height: 50px;
+            background-color: skyblue;
+            text-align: center;line-height: 50px;
+            border-radius: 20px;
+        }
+        .box1{box-shadow: 8px 5px 10px inset rgb(49, 49, 97);}
+        .box2{box-shadow: 5px 5px 5px darkred, 10px 10px 5px yellow, 15px 15px 5px darkblue;}
+    </style>
+</head>
+<body>
+    <div>Hongteacher Class</div>
+    <p class="box1">Hongteacher Class</p>
+    <p class="box2">Hongteacher Class</p>
+</body>
+</html>

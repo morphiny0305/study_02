@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        div{width: 600px;height: 150px;padding: 30px;border: 10px solid olive; margin-bottom: 20px;background-color: lightgreen;}
+        .border-box{box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h2>content-box(기본값)</h2>
+        <p>w:600 h:150 padding:30 border:10</p>
+        <p>실제 박스 크기는?</p>
+        <p>width + padding + border</p>
+        <p>600 + 30 + 30 + 10 + 10 = 680</p>
+    </div>
+    <div class="border-box">
+        <h2>border-box</h2>
+        <p>w:600 h:150 padding:30 border:10</p>
+        <p>실제 박스 크기는? 600</p>
+        <p>width</p>
+    </div>
+</body>
+</html>

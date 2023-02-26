@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <style>
+        div{width: 500px;height: 500px;
+            border: 2px solid black;
+            background-image: url(./images/bg-size.jpg);
+            background-repeat: no-repeat;
+            float: left;
+            margin: 20px;
+        }
+        /*auto : 원본 크기로 보이게 */
+        #box1{background-size: auto;}
+
+        /*contain : 가로 종횡 비 맞춤 */
+        #box2{background-size: contain;}
+
+        /*cover : 세로 종횡 비 맞춤 */
+        #box3{background-size: cover;
+            background-position: -100px 0;}
+
+        /* 백분율, 픽셀로 크기 조정 */
+        #box4{background-size: 100% 100%;}
+        #box5{background-size: 300px 400px;}
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+</body>
+</html>

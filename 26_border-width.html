@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-width</title>
+    <style>
+        *{margin: 0;padding: 0;}
+
+        /*h2 가운데 정렬 아래로 대시드라인 그리기*/
+        h2{
+            width: 300px;
+            margin:20px auto;
+            text-align: center;
+            /* border-bottom-style: dashed;
+            border-bottom-color: red;
+            border-bottom-width: 3px;*/
+            border-bottom: dashed red 3px;
+        }
+
+        div{
+            width: 300px;
+            margin: 20px auto;
+            text-align: center;
+            border-style: solid;
+            padding: 10px;
+        }
+
+        .box1{border-width: thin;}
+        .box2{border-width: medium;}
+        .box3{border-width: thick;}
+        .box4{border-width: 5px thin;}
+        .box5{border-width: 5px 10px 3px;}
+        .box6{border-width: 3px 5px 7px 10px;}
+    </style>
+</head>
+<body>
+    <h2>border-width사용법</h2>
+    <div class="box1">가늘다:thin</div>
+    <div class="box2">중간굵기:medium</div>
+    <div class="box3">두껍다:thick</div>
+    <div class="box4">값2 5px(위아래) thin(좌우)</div>
+    <div class="box5">값3 5px(위) 10px(좌우) 3px(아래)</div>
+    <div class="box6">값4 3px(위) 5px(오른) 7px(아래) 10px(왼)</div>
+</body>
+</html>

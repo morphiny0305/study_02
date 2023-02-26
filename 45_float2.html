@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float2</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /* 폰트 정의 */
+        @font-face {
+            font-family: title;
+            src: url(./wepfont/title1.woff);
+        }
+        @font-face {
+            font-family: para;
+            src: url(./wepfont/para1.woff);
+        }
+        #wrap{width: 700px;margin: auto;}
+        h1{
+            font-family: title;
+            font-weight: normal;
+            text-align: center;
+            margin: 20px 0 30px;
+            color: darkgreen;
+            border-bottom: 3px solid darkgreen;
+            padding-bottom: 18px;
+        }
+        p{
+            font-family: para;
+            width: 400px;
+            line-height: 1.7;
+            float: left;
+            text-align: justify;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        figure{
+            float: right;
+            width: 200px;
+            border: 1px solid rgb(90, 90, 90);
+            padding: 15px;
+        }
+        figure img{
+            width: 100%;
+        }
+        figure figcaption{
+            font-size: 14px;
+            color: #888;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>써니초록농장-연꽃과 함께 포근하고 건강하게...</h1>
+        <p>
+            꽃말은 소외된 사랑.<br>
+            수련과의 여러해살이 수초. 연못에서 자라거나 연못이나 논과 같이 물 빠짐이 좋지 않은 곳에서 재배되며 뿌리줄기가 굵고 옆으로 뻗어 간다. 잎은 뿌리줄기에서 나와 잎자루 끝에 달리며, 꽃은 7~8월에 붉은색 또는 흰색으로 핀다. 잎과 열매는 약용하고, 뿌리는 식용한다. 인도, 중국, 오스트레일리아가 원산지다. 그녀는 잠깐 생각하는 듯하더니, 이내 옆에 있는 무화과 열매를 따서 연꽃으로 온통 뒤덮인 못 위에 던지고 던지고 하면서, 코끼리 이야기를 했다.
+        </p>
+        <figure>
+            <img src="./images/lotus.png" alt="연못">
+            <figcaption>쌍떡잎식물 미나리아재비목 연꽃 연꽃속의 여러해살이 식물. 부용(芙蓉) 이라고도 부른다.</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

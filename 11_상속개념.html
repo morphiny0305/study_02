@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상속개념</title>
+    <style>
+        div{
+            width: 300px;
+            border: 1px solid red;
+            margin-top: 20px;
+            padding: 10px;
+
+            color: green;
+        }
+        div a{color: inherit;}
+    </style>
+</head>
+<body>
+    <a href="#">일반링크</a>
+    <div> <!--부모-->
+        div영역
+        <p>p영역</p> <!--자식1-->
+        <a href="#">inherit</a> <!--자식2-->
+    </div>
+</body>
+</html>

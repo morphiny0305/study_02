@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-layout</title>
+    <style>
+        table{width: 500px;border: 1px solid green; margin: 20px 0;border-collapse: collapse;}
+        table td{border: 1px solid green;}
+        
+        .table2 td{white-space: nowrap;}
+        .table3{table-layout: fixed;}
+        .table3 td{white-space: nowrap;}
+    </style>
+</head>
+<body>
+    <table class="table1">
+        <tr>
+            <td>table-layout</td>
+            <td>width 속성을 이용해 너비를 지정하면, 내용을 길게 입력할 경우 크기에 맞춰 화면에 표시된다.---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>table-layout</td>
+            <td>예외적인 경우로서 td에 white-space:nowrap을 적용시키면 표가 커진다.</td>
+        </tr>
+    </table>
+    <table class="table3">
+        <tr>
+            <td>table-layout</td>
+            <td>어떤 상황에서도 표 크기를 고정하고 싶다면 fixed를 사용하면 크기는 고정된다.</td>
+        </tr>
+    </table>
+</body>
+</html>

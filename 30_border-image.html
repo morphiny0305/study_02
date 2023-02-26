@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image</title>
+    <style>
+        div{width: 500px; height: 50px;
+        border: 10px solid transparent;
+        text-align: center;
+        line-height: 50px;
+        margin: 20px 0;
+    }
+    /* 이미지 크기 ÷ 패턴 갯수 */
+    /* 81 ÷ 3 = 27 */
+    .box1{border-image: url(./images/border.png) 27 round;}
+    .box2{border-image: url(./images/border.png) 27 repeat;}
+    .box3{border-image: url(./images/border.png) 27 stretch;}
+    </style>
+</head>
+<body>
+    <div class="box1">border-round</div>
+    <div class="box2">border-repeat</div>
+    <div class="box3">border-stsretch</div>
+</body>
+</html>

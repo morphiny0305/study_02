@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration</title>
+    <style>
+        p:first-of-type a{text-decoration: none;color: darkolivegreen;}
+        p:nth-of-type(2){text-decoration: underline;}
+        p:nth-of-type(3){text-decoration: overline;}
+        p:nth-of-type(4){text-decoration: line-through;}
+
+        /* 평상시 언더라인 없다*/
+        div a{text-decoration: none;color: #000;}
+
+        /* 마우스가 글자위로 올라가면 언더라인이 생성 */
+        div a:hover{text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h1>밑줄 관련 속성 : text-decoration</h1>
+    <p><a href="#">밑줄없음</a></p>
+    <p>아래밑줄</p>
+    <p>위로밑줄</p>
+    <p>중간취소선</p>
+    <hr>
+    <h3>Quiz. a태그에 평상시에는 언더라인 없다가 마우스가 글자위로 올라가면 언더라인이 생성되게 제작하시오.
+        (위에 설명한 a태그에는 반응이 되지 않게 할것!!!!)
+    </h3>
+    <div><a href="#">test</a></div>
+</body>
+</html>
